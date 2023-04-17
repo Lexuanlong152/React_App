@@ -11,3 +11,147 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.siteLogo {
+  width: 100px;
+}
+
+.cartLink {
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.cartLink span {
+  background-color: red;
+  color: white;
+}
+
+.search {
+  display: flex;
+}
+
+.search input {
+  font-size: 18px;
+  padding: 3px;
+  outline: none;
+}
+
+.search button {
+  background-color: aqua;
+  border: none;
+  color: black;
+  border-radius: 2px;
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px;
+}
+
+
+/* Products */
+
+.productList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid gray;
+}
+
+.product img {
+  height: 200px;
+  background-size: cover;
+}
+
+.priceBlocks {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.productPrice {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.priceBlocks button {
+  background: linear-gradient(rgb(96, 110, 218), rgb(211, 83, 83));
+  border: none;
+  width: 50px;
+  color: white;
+  border-radius: 3px;
+  padding: 7px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.priceBlocks button :hover {
+  background: linear-gradient(rgb(132, 141, 210), rgb(211, 83, 83));
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 20px
+}
+
+.cartItemImg {
+  width: 20%;
+}
+
+.cartItemInfo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cartItemQuantity {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}
+
+.cartItemPrice {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartItemRemove {
+  width: 10%;
+}
+
+.cartItem button {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+
+.removeLogo {
+  width: 50px;
+}
